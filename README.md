@@ -2,6 +2,7 @@
 
 ## Autoencoder
 <img width="700" height="300" alt="image" src="https://github.com/user-attachments/assets/7207ab2c-c75f-4eec-8073-6ca7786419bb" />
+
 ### 위 자료는 오토인코더를 이해하기 쉽게 시각화 한것이다.
 
 오토인코더의 원리는 간단하다 우선 input값 x를 넣어서 encoder에 넣어서 데이터를 찌뿌(압축)시켜 잠재벡터로 만들고, 다시 잠배벡터를 확장시키는 디코더에 넣어서 재구성한다.
