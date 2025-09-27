@@ -1,7 +1,7 @@
 # GAN_with_Autoencoder
 
 ## Autoencoder
-<img width="1055" height="477" alt="image" src="https://github.com/user-attachments/assets/7207ab2c-c75f-4eec-8073-6ca7786419bb" />
+<img width="700" height="300" alt="image" src="https://github.com/user-attachments/assets/7207ab2c-c75f-4eec-8073-6ca7786419bb" />
 ### 위 자료는 오토인코더를 이해하기 쉽게 시각화 한것이다.
 
 오토인코더의 원리는 간단하다 우선 input값 x를 넣어서 encoder에 넣어서 데이터를 찌뿌(압축)시켜 잠재벡터로 만들고, 다시 잠배벡터를 확장시키는 디코더에 넣어서 재구성한다.
@@ -10,7 +10,7 @@
 <img width="855" height="398" alt="image" src="https://github.com/user-attachments/assets/6c58c1bd-6923-475d-aaf2-53e411ea5b65" />
 
 ## GAN
-<img width="1017" height="641" alt="image" src="https://github.com/user-attachments/assets/f6aa10b7-097b-43fd-93da-f0fde2810647" />
+<img width="700" height="400" alt="image" src="https://github.com/user-attachments/assets/f6aa10b7-097b-43fd-93da-f0fde2810647" />
 이제 GAN에 대해서 알아볼것이다 GAN은 (Generative Adversarial Network) 즉 생성적적대신경망의 약자로 
 생성자 클래스와 판별자 클래스가 있는데 생성자 클래스는 random_noise로부터 FakeImage를 생성,
 판별자 클래스는 사전에 진짜 이미지를 학습하여 생성자클래스가 반환하는 FakeImage로부터의 거짓/진실 여부를 판단한다.
@@ -40,8 +40,8 @@ Dropout()함수 기능도 똑같이 추가해 학습을 더욱더 개선시킨�
 실제 이미지를 받아 잠재벡터로 만들어 축소시킨다음 sigmoid함수를 이용해 픽셀값을 0~1값으로 반환해준다.
 순전파 정의,
 
-
 <img width="698" height="307" alt="image" src="https://github.com/user-attachments/assets/6a1ac06c-17e3-44c5-979f-1f0577e0df5e" />
+
 #### 생성자, 판별자 객체 생성하고, 손실함수와 옵티마이저를 설정하는 모습
 
 옵티마이저는 Adam보다 NAdam이 무난하고 좋았다.
@@ -56,7 +56,7 @@ epoch은 70으로 과적합 되지않고 딱 좋았다.
 #####D(G(z)):판별자가 생성자가 만든 가짜 이미지를 진짜라고 판단한 평균 확률
 
 ## 학습 결과
-<img width="805" height="1006" alt="image" src="https://github.com/user-attachments/assets/123d2a16-87d3-41a0-99b4-184b040712be" />
+<img width="500" height="700" alt="image" src="https://github.com/user-attachments/assets/123d2a16-87d3-41a0-99b4-184b040712be" />
 
 와우  꽤 잘나왔네? loss값이 서로 수렴된다.
 
